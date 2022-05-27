@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menú digital</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<!-- Start your code here -->
+  
+<!-- Todo el codigo esta basado en div´s para poder manipular mejor cada elemento por separado o en conjunto -->  
+<!-- primer style para delimitar la zona del menú -->
+<style>
+  #Bordes{
+    height: 5400px;
+    width: 800px;
+    margin: 0 auto ;
+    padding: 10px;
+    background: white ;
+    position: static;
+  }
+ </style>
+  
+<!-- Segundo style para darle color de fondo y centrar todo el div completo -->
+<style>
+  #Pagina1{
+    border: solid 3px black;
+    height: 6435px;
+    width: 680px;
+    margin: 0 auto ;
+    padding: 10px;
+    background: #fcf4d7 ;
+    position: static;
+  }
+  </style>
+  
+<!-- El div principal, dentro del cual esta la mayoria de elementos del codigo -->
+<!-- El menú esta delimitado por un div externo, sin borde para poder centrar el menú desplegable -->  
+ <div id="Bordes">
+   
+<!-- Se creo una tabla dentro del div menú para poder organizar mejor los vinculos del menú desplegable -->  
+<!-- Primera fila de la tabla -->
+   <div class="menú">
+    <table class="Menu" width="800">
+  <tr>
+    <td><a href="#Entrada"><strong>Entradas</strong></a></td>
+    <td><a href="#Sopa">Sopas</a></td>
+    <td><a href="#Ensalada"><strong>Ensaladas<br>y Pastas</strong></a></td>
+    <td><a href="#Carne">Carnes y aves</a></td>
+    <td><a href="#Pescado"><strong>Pescados</strong></a></td>
+    <td><a href="#Enchiladas">Enchiladas</a></td>
+    <td><a href="#Mexi"><strong>Platillos <br> Mexicanos</strong></a></td>
+    <td><a href="#Hamburguesas">Hamburguesas</a></td>
+    <td><a href="#Sodas"><strong>Fuente <br>de sodas</strong></a></td>
+      </tr>
+<!-- Segunda fila de la tabla -->      
+      <tr>
+    <td><a href="#Bebida">Bebidas</a></td>
+        <td><a href="#Jugo"><strong>Jugos</strong></a></td>
+    <td><a href="#Comb">Combinados</a></td>
+        <td><a href="#Especiales1"><strong>Especiales</strong></a></td>
+    <td><a href="#Desayuno">Desayunos <br> Mexicanos</a></td>
+        <td><a href="#Hotcakes1"><strong>Hotcakes</strong></a></td>
+    <td><a href="#Promo">Promociones</a></td>
+    <td><a href="#Galeria"><strong>Galeria</strong></a></td>
+      </tr>
+    </table>
+  </div>
+   
+<!-- "Pagina 1" es le div principal en el cual se trabajo el codigo -->   
+<div id="Pagina1">
+  <div class="portada">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a id="Entrada"><h1>Menú digital</h1></a></div>
+<!-- Logo de Sanborns por se tomo como referencia un menú viejo -->
+  <div class="logo"><img src="https://aguitech.com/proyectos/images/fotos/1_20170920230642_0.png"></div>
+
+<!-- Se crea el div "entradas" y se crea igualmente un ancla <a> para poder referenciarla en el menú desplegable -->
+<a id="Entrada"></a>
+  <div class="borde1">
+<div class="entradas">
+<!-- Esta es la parte del titulo de la sección y se hace refrencia al ancla correspondiente a las imagenes de esta -->
+  <p><strong><strong><font color="red">Entradas:</font></strong></strong></p>
+<!-- En esta parte se le dio formato al texto para que se pudiera ver como se visualiza -->
+<!-- Cada uno de los pruductos ofertados tienen la misma estructura -->  
+  <small>(200 g) </small><strong>Coctel de frutas:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20.00</strong></font><small></small><br>Fresca combinación de sandía, melón, papaya, piña y manzana con licor marrasquino.<br><br>
+  
+  <small>(120 g) </small><strong>Guacamole:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$50.00</strong></font><small></small><br>Con totopos y queso fresco.<br><br>
+  
+  <small>(160 g) </small><strong><a id="Sopa">Choriqueso:</a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$90.00</strong></font><small></small><br>Acompañado de tortillas de harína.<br><br>
+  
+  <small>(6 pzas) </small><strong>Mini sopes mixtos:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br>De pechuga de pollo deshebrada (2pzas), de cochinita pibil (2pzas) y de chorizo(2 pzas).<br><br>
+  </div>  <!-- Termino del div "entradas" -->
+    
+<!-- Creamos el div "sopas" -->
+    <div class="sopas">
+      <p><strong><font color="blue">Sopas:</font></strong></p>
+      <small>(450 ml) </small><strong> Especial Sanborns:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$50.00</strong></font><small></small><br><br><br>
+      
+      <small>(450 ml) </small><strong>Sopa de frijol negro:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30.00</strong></font><small></small><br><br><br>
+      
+      <small>(450 ml) </small><strong>Sopa de tortilla:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30.00</strong></font><small></small><br><br><br>
+      
+      <small>(450 ml) </small><strong>Caldo Tlalpeño:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$40.00</strong></font><small></small><br><br><br>
+      
+      <small>(450 ml) </small><strong><a id="Ensalada">Sopa de fideos:</a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20.00</strong></font><small></small><br><br><br>
+      
+        <small>(450 ml) </small><strong>Sopa de verdura mixta:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30.00</strong></font><small></small><br><br><br>
+      <a id="Ensalada"></a>
+      </div><!-- Termino del div "sopas" -->
+      
+<!-- Creamos el div "ensaladas" -->
+      <div class="ensaladas">
+        <font color="green"><p><strong>Ensaladas y pastas:</strong></p>
+      <small>*Al pedir tu ensalada, puedes elegir uno de nuestros aderezos: <strong>Mil islas</strong>, tártara, <strong>vinagreta</strong>, blue cheese, <strong>cesar</strong> o miel mostaza*</small></font><br><br>
+        <small>(400 g) </small><strong>Especial del chef:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$120.00</strong></font><small></small><br>Con pechuga de pollo, tocino, queso amarillo, lechuga y apio.<br><br>
+        
+        <small>(215 g) </small><strong>Ensalada Cesar con pollo:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$110.00</strong></font><small></small><br><br><br>
+        
+        <small>(320 g) </small><strong>Totopo Jaliciense:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$150.00</strong></font><small></small><br>Pechuga de pollo, lechuga, rajas de jalapeño,aguacate y queso fresco.<br><br>
+        
+        <small>(380 g) </small><strong>Fettuccini a la crema:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$180.00</strong></font><small></small><br>Con queso parmesano.<br><br>
+        
+        <small>(550 g) </small><strong><a id="Carne">Spaghetti con frutos del mar:</a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$250.00</strong></font><small></small><br>Con almejas, pulpo, pescado y camarones.<br><br>
+        
+        <small>(400 g) </small><strong>Lasagna a la bolognesa:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$150.00</strong></font><small></small><br><br><br>
+        </div> <!-- Termino del div "ensaladas" -->
+  
+<!-- Creamos el div "carnes" -->
+    <div class="carnes">
+      <p><strong><font color="red">Carnes y aves:</font></strong></p>
+      <small>(150 g) </small><strong>Puntas de filete de res en salsa ranchera:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$180.00</strong></font><small></small><br>Con frijoles refritos y nopal asado.<br><br>
+      
+      <small>(150 g) </small><strong>Asada de filetes de res:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$150.00</strong></font><small></small><br>Con dobladas verde y frijoles refritos<br><br>
+      
+      <small>(200 g) </small><strong>Arrachera:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$200.00</strong></font><small></small><br>Con papas a la francesa y guacamole, acompañado de salsa verde.<br><br>
+      
+      <small>(150 g) </small><strong>Milanesa empanizada:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$120.00</strong></font><small></small><br>Con papas gajo y ensalada de la casa.<br><br>
+      
+      <small>(150 g) </small><strong>Puntas de pollo a los 3 chiles:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$160.00</strong></font><small></small><br>Con frijoles refritos y nopal asado.<br><br>
+      
+      <small>(180 g) </small><strong>Suprema de pollo Sanborns:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$200.00</strong></font><small></small><br>Con enchilada de queso, rajas poblanas, frijoles refritos y guacamole.<br><br>
+      
+      <small>(200 g) </small><strong><a id="Pescado">Pechuga a la cordon blue:</a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$180.00</strong></font><small></small><br>Con papas a la francesa y ensalada de la casa.<br><br>
+      
+      <small>(120 g) </small><strong>Fajitas de pollo:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$150.00</strong></font><small></small><br>Con cebolla, tocino, pimiento morron y guacamole.<br><br>
+      </div> <!-- Termino del div "carnes" -->
+      
+<!-- Creamos el div "pescados" -->
+    <div class="pescados">
+      <p><strong><font color="blue">Pescados:</font></strong></p>
+      <small><font color="blue">*Servidos con arroz blanco y ensalada de la casa (110 g)*</font></small><br><br>
+      <small>(200 g) </small><strong>Filete de pescado a la plancha o al mojo de ajo:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$150.00</strong></font><small></small><br><br><br>
+      
+      <small>(200 g) </small><strong>Filete de pescado empanizado crujiente:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$120.00</strong></font><small></small><br><br><br>
+      
+      <small>(200 g) </small><strong><a id="Enchiladas">Salmón a la plancha o al mojo de ajo o al ajillo:</a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$250.00</strong></font><small></small><br><br><br>
+      
+      <small>(200 g) </small><strong>Atún sellado a la plancha o al mojo o al ajillo:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$200.00</strong></font><small></small><br><br><br>
+      </div><!-- Termino del div "pescados" -->
+    
+<!-- Creamos el div "enchiladas" -->
+      <div class="enchiladas">
+        <p><strong><font color="green">Enchiladas:</font></strong></p>
+        <small>(3 pzas) </small><strong>Tradicionales enchiladas a la Sanborns :</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$120.00</strong></font><small></small><br>Gratinadas con queso y salsa roja.<br><br>
+        
+        <small>(3 pzas) </small><strong>Nuestras famosas enchiladas suizas rojas:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$110.00</strong></font><small></small><br>Gratinadas con queso y salsa roja.<br><br>
+        
+        <small>(3 pzas) </small><strong>Enchiladas zuisas verdes:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$110.00</strong></font><small></small><br>Gratinadas con queso y salsa verde.<br><br>
+        
+        <small>(3 pzas) </small><strong><a id="Mexi">Enchiladas de mole poblano:</a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$150.00</strong></font><small></small><br><br><br>
+        
+        <small>(3 pzas) </small><strong>Enchiladas campesinas:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$110.00</strong></font><small></small><br>Con salsa verde, queso y crema.<br><br>
+        </div> <!-- Termino del div "enchiladas" -->
+
+<!-- Creamos el div "platillos" -->
+<div class="platillos">
+  <p><strong><font color="red">Platillos mexicanos:</font></strong></p>
+      <small>(300 g) </small><strong>Chilaquiles verdes o rojos:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$120.00</strong></font><small></small><br>Acompañados de frijoles refritos.<br><br>
+  
+  <small>(4 pzas / 180 g) </small><strong>Pepitos de arrachera:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100.00</strong></font><small></small><br>Con papas a la francesa, chile chipotle y cebolla asada.<br><br>
+  
+      <small>(4 pzas) </small><strong>Tacos dorados de pollo:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br>Con guacamole, crema, frijoles y queso.<br><br>
+  
+      <small>(150 g) </small><strong>Alambre de bistec de res:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$90.00</strong></font><small></small><br>Con tocino, pimiento morron y queso al gratín.<br><br>
+  
+      <small>(4 pzas) </small><strong>Tecolotes:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.00</strong></font><small></small><br>Molletes con chilaquiles verdes o rojos gratinados.<br><br>
+  
+      <small>(4 pzas) </small><strong>Burritos de carne al pastor:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br>Con pico de gallo y piña.<br><br>
+  
+  <small>(4 pzas) </small><strong><a id="Hamburguesas">Molletes con cochinita pibil:</a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100.00</strong></font><small></small><br><br><br>
+  
+      <small>(600 g) </small><strong>Pozole rojo o verde:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$70.00</strong></font><small></small><br>Con pollo, chile poblano, queso panela y aguacate.<br><br>
+  </div> <!-- Termino del div "platillos" -->
+      
+<!-- Creamos el div "tortas" -->
+    <div class="tortas">
+      <p><strong><font color="blue">Tortas, hamburguesas y sandwiches:</font></strong></p>
+      <small>(120 g) </small><strong>Torta de carnitas:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$50.00</strong></font><small></small><br><br><br>
+      
+      <small>(120 g) </small><strong>Torta de carne al pastor:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.00</strong></font><small></small><br>Con queso gouda, cebolla y piña.<br><br>
+      
+      <small>(150 g) </small><strong>Hamburguesa sencilla o con queso:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100.00</strong></font><small></small><br>Acompañada de cebolla empanizada, papas a la francesa y encurtidos.<br><br>
+      
+      <small>(150 g) </small><strong>Hamburguesa británica:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;110.00</strong></font><small></small><br>Con queso, tocino, jitomate y papas a la francesa.<br><br>
+      
+      <small>(3 pzas) </small><strong><a id="Sodas">Sandwich Sanborns de lujo:</a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br>Con pollo, jamón y uqeso gouda en pan frances con papas a la francesa.<br><br>
+      
+      <small>(2 pzas) </small><strong>Sandwich de tres quesos:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br>ueso gouda, cheddar y mozzarella.<br><br>
+      </div> <!-- Termino del div "tortas" -->
+
+<!-- Creamos el div "especialidades" -->
+   <div class="especialidades">
+     <p><strong><font color="green">Especialidades de la fuente:</font></strong></p>
+         <small>(1 porción) </small><strong>Pastel de queso con fresa:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.00</strong></font><small></small><br>Cubierto con crema batida y glasse.<br><br>
+
+         <small>(1 porción) </small><strong>Pay de helado de limón:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.00</strong></font><small></small><br><br><br>
+
+         <small>(180 g) </small><strong>Arroz con leche:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30.00</strong></font><small></small><br><br><br>
+     
+    <small>(160 g) </small><strong>Nieve:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20.00</strong></font><small></small><br>Vainilla / Chocolate / Fresa<br><br>
+
+     <small>(380 g) </small><strong><a id="Bebida">Banana Split:</a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br>Platano con helado de fres, chocolate y vainilla.<br><br>
+
+         <small>(443 ml) </small><strong>Malteada tradicional:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$50.00</strong></font><small></small><br>Chocolate, vainilla o fresa servida con crema batida y galletas.<br><br>
+    </div> <!-- Termino del div "especialidades" -->
+      
+<!-- Creamos el div "bebidas" -->
+    <div class="bebidas">
+      <p><strong><font color="red">Bebidas:</font></strong></p>
+      <small>(325 ml) </small><strong>Cervezas:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.00</strong></font><small></small><br>Lagger / XX Ambar / Corona / Victoria / Indio<br><br>
+      
+      <small>(325 ml) </small><strong>Cervezas premium:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br>Bohemia / Negra modelo / Modelo especial<br><br>
+      
+      <small>(390 ml) </small><strong>Limonada o Naranjada:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br><br><br>
+      
+      <small>(448 ml) </small><strong>Refresco grande:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30.00</strong></font><small></small><br><br><br>
+      
+      <small>(252 ml) </small><strong>Chocolate caliente o frío:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30.00</strong></font><small></small><br><br><br>
+      
+      <small>(200 ml) </small><strong>Leche:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20.00</strong></font><small></small><br><br><br>
+      
+      <small>(180 ml) </small><strong>Cafe express:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30.00</strong></font><small></small><br><br><br>
+      
+      <small>(1000 ml) </small><strong>Agua embotellada:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20.00</strong></font><small></small><br><br><br>
+      </div> <!-- Termino del div "bebidas" -->
+      
+<!-- Creamos el div "extra" -->
+     <div class="extra">
+       <a id="Jugo"><p><strong><font color="red"><a id="Jugo">Extra:</a></font></strong></p></a>
+      <strong>Café Sanborns</strong><br><strong>Café Sanborns descafeinado</strong>
+        </div> <!-- Termino del div "extra" -->
+    
+<!-- Creamos el div "jugo" -->
+<div class="jugo">
+  <a id="Comb"><p><strong><font color="blue"><a id="Comb">Buenos días jugo:</a></font></strong></p></a>
+<small>(448 ml) </small><strong>Jugo de naranja, toronja, zanahoria, piña o tomate:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$20.00</strong></font><small></small><br><br><br>
+      </div> <!-- Termino del div "jugo" -->
+      
+<!-- Creamos el div "combinados" -->
+    <div class="combinados">
+      <p><strong><font color="green">Combinados:</font></strong></p>
+      <small>(448 ml) </small><strong><a id="Especiales1">Naranja con guayaba y limón:</a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30.00</strong></font><small></small><br><br><br>
+        
+        <small>(448 ml) </small><strong>Naranja con fresa:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30.00</strong></font><small></small><br><br><br>
+      </div> <!-- Termino del div "combinados" -->
+      
+<!-- Creamos el div "especiales" -->
+          <div class="especiales">
+            <p><strong><font color="red">Especiales del desayuno:</font></strong></p>
+            <small><font color="red">*Servidos a toda hora con jugo(200 ml) o fruta fresca de la estación(150 g) y cafe americano(170 ml) o té(170 ml)*</font></small><br><br> 
+            <small>(2 pzas) </small><strong>Huevos al gusto:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$60.00</strong></font><small></small><br>Revuleto, con salchicha, a la mexicana, con tocino, con jamón o con chorizo<br><br>
+            
+            <small>(2 pzas) </small><strong>Huevos revueltos con huarache:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br>Servido en salsa verde, queso panela y cilantro.<br><br>
+            
+            <small>(2 pzas) </small><strong>Huevos rancheros:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$90.00</strong></font><small></small><br>Servidos sobre tortilla en salsa ranchera.<br><br>
+            
+            <small>(2 pzas) </small><strong>Huevos divorciados:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100.00</strong></font><small></small><br>Frito sobre tortilla, con salsa roja y verde, acompañado de frijoles refritos.<br><br>
+            
+            <small>(2 pzas) </small><strong>Huevos tirados:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$90.00</strong></font><small></small><br>Con platano macho frito y chiles toreados.<br><br>
+            
+            <small>(2 pzas) </small><strong>Omelete de queso o champiñones:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$90.00</strong></font><small></small><br>Con papa hash-brown y frijoles refritos.<br><br>
+            
+            <small>(2 pzas) </small><strong>Tortilla de huevo:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$90.00</strong></font><small></small><br><a id="Desayuno">Con papa alemana y chilaquiles caseros.</a><br><br>
+    </div> <!-- Termino del div "especialess" -->
+        
+<!-- Creamos el div "extras" -->    
+    <div class="extras">
+      <p><strong><font color="red">Por ($10) más, le servimos jugo grande(450ml)</font></strong></p>
+      </div> <!-- Termino del div "extras" -->
+
+<!-- Creamos el div "desayunos" -->
+    <div class="desayunos">
+      <p><strong><font color="blue">Desayunos méxicanos:</font></strong></p>
+      <small><font color="blue">*Servidos a toda hora con jugo(200 ml) o fruta fresca de la estación(150 g) y cafe americano(170 ml) o té(170 ml)*</font></small><br><br> 
+<small>(2 pzas) </small><strong>Entomatadas de pollo:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100.00</strong></font><small></small><br>Con crema, queso y frijoles refritos.<br><br>
+      
+      <small>(310 g) </small><strong>Chilaquiles Zuisos con pollo:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$120.00</strong></font><small></small><br>Crema y queso con frijoles refritos.<br><br>
+      
+      <small>(4 pzas) </small><strong>Molletes Sanborns:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br><a id="Hotcakes1">Bolillo con frijoles refritos y queso gratinado.</a><br><br>
+      
+      <small>(150 g) </small><strong>Arrachera a la parilla:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$180.00</strong></font><small></small><br>Servida con chilaquiles y queso al gratín.<br><br>
+      </div> <!-- Termino del div "desayunos" -->
+      
+<!-- Creamos el div "hotcakes" -->
+      <div class="hotcakes">
+        <p><strong><font color="green">Hot cakes, pan y fruta:</font></strong></p>
+        <font color="green"><small>*Servidos a toda hora con jugo(200 ml) o fruta fresca de la estación(150 g) y cafe americano(170 ml) o té(170 ml)*</small></font><br><br>
+  <small>(3 pzas) </small><strong>Hotcakes:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$70.00</strong></font><small></small><br><br><br>
+        
+          <small>(2 pzas) </small><strong>Bisquets:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$40.00</strong></font><small></small><br>Con matequilla y mermelada.<br><br>
+        
+        <small>(200 g) </small><strong><a id="Promo">Yogurt espeial:</a></strong><font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30.00</strong></font><small></small><br>Yogurt natural con fruta, amaranto, granola y miel.<br><br>
+        
+          <small>(1 pzas) </small><strong>Waffle:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$40.00</strong></font><small></small><br><br><br>
+    </div> <!-- Termino del div "hotcakes" -->
+        
+<!-- Creamos el div "promo" -->
+    <div class="promo">
+      <p><strong><font color="red">Promociones:</font></strong></p>
+      <small>(3 unid.) </small><strong>Pa la cruda:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$120.00</strong></font><small></small><br>Elige uno de nuestros deliciosos chilaquiles, jugo de naranja (200 ml) y 1 pza de pan de dulce.<br><br>
+      
+      <small>(3 unid.) </small><strong>Desayuno express:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$80.00</strong></font><small></small><br>Elige un plato de huevos al gusto, una tasa de cafe (180ml) o jugo(200 ml) y 1 pza de pan de dulce.<br><br>
+      
+      <small>(4 unid.) </small><strong>Para compartir:</strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$350.00</strong></font><small></small><br>Elige dos platillos cualquiera y el postre va por nuestra cuenta (especialidades de la fuente). <br><br>
+      
+      <small>(2 unid.) </small><strong><a id="Entradas2"><a id="Galeria">Para endulzar el día:</a></a></strong> <font color="#359738"><strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></font><small></small><br>Todos los <strong>Jueves</strong>, fuentes de sodas al 2x1.<br><br>
+      </div> <!-- Termino del div "promo" -->
+  </div> <!-- Termino del div "borde1" -->
+  </div>  <!-- Termino del div "Pagina 1" -->
+  </div> <!-- Termino del div "Bordes" -->
+  
+<!-- Se creo una tabla para poder organizar las imagenes de todos los platillos de una manera más estatic y sencilla, para no crear un div indivial para cada una de estas -->
+  <div class="galeria">
+    <table class="Galeria2" height="3000" width="1500">
+<!-- Sección de la tabla con las imagenes de Entradas -->
+      <strong><font color="red">Entradas:</font></strong><br>
+      <tr>
+        <td><img src="https://static.onecms.io/wp-content/uploads/sites/21/2016/06/01/coctel-de-frutas-facil-2000.jpg" width="150" height="120"></td>
+        <td><img src="https://assets.unileversolutions.com/recipes-v2/93272.jpg"  width="150" height="120"></td>
+        <td><img src="https://www.zwan.com.mx/wp-content/uploads/2014/12/choriqueso.png"  width="150" height="120"></td>
+        <td><img src="https://www.lacostena.com.mx/media/uploads/Recipes/mini_sopes_1600x1000-min.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Coctel de frutas</strong></td>
+        <td><strong>Guacamole</strong></td>
+      <td><strong>Choriqueso</strong></td>
+      <td><strong>Mini sopes mixtos</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Sopas -->
+      <tr>
+    <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Sopas2"></a><td height="50"><strong><font color="blue"><big>Sopas:</big></font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://antojandoando.com/wp-content/uploads/2016/08/sopa-pasta-detalle-pq-1.jpg" width="150" height="120"></td>
+        <td><img src="https://i.ytimg.com/vi/SKtFaH5LRlw/maxresdefault.jpg"  width="150" height="120"></td>
+        <td><img src="https://assets.unileversolutions.com/recipes-v2/212885.jpg"  width="150" height="120"></td>
+        <td><img src="https://assets.unileversolutions.com/recipes-v2/124130.jpg"  width="150" height="120"></td>
+         <td><img src="https://mmmole.com/wp-content/uploads/2021/10/sopa-de-fideo-5-1.jpg" width="150" height="120"></td>
+        <td><img src="https://unareceta.com/wp-content/uploads/2017/11/receta-de-sopa-de-verduras-con-fideos-640x394.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Especial Sanborns</strong></td>
+      <td><strong>Sopa de frijol negro</strong></td>
+      <td><strong>Sopa de tortilla</strong></td>
+      <td><strong>Caldo tlalpeño</strong></td>
+      <td><strong>Sopa de fideo</strong></td>
+      <td><strong>Sopa de verdura mixta</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Ensaladas y pastas -->
+       <tr>
+          <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+         <a id="Ensaladas2"></a><td height="50"><strong><font color="green">Ensaldas y pastas:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://www.cocinayvino.com/wp-content/uploads/2021/09/www.cocinayvino.com-ensalada-de-atun-1200x900.jpg" width="150" height="120"></td>
+        <td><img src="https://images.ecestaticos.com/lD5P5Laq4xFzLo3B9J02zB_GDng=/92x95:1837x1406/1200x899/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F8d6%2Fb2c%2F174%2F8d6b2c1744497538097bdf0bd5dd2c5a.jpg"  width="150" height="120"></td>
+        <td><img src="https://assets.kraftfoods.com/recipe_images/opendeploy/91375_KRL_K47410V1_OR1_FO_640x428.jpg"  width="150" height="120"></td>
+        <td><img src="https://i2.wp.com/irecetasfaciles.com/wp-content/uploads/2020/08/fettuccinis-a-la-carbonara.jpg?fit=900%2C602&ssl=1"  width="150" height="120"></td>
+         <td><img src="https://www.tureceta.net/wp-content/uploads/2020/03/Espagueti-con-camarones-en-salsa-blanca-1.jpg" width="150" height="120"></td>
+        <td><img src="https://www.recetasdesbieta.com/wp-content/uploads/2018/10/lasagna-original..jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Especial del chef</strong></td>
+      <td><strong>Ensalada Cesar con pollo</strong></td>
+      <td><strong>Totopo Jaliciense</strong></td>
+      <td><strong>Fettuccini a la crema</strong></td>
+      <td><strong>Spaghetti con frutos del mar</strong></td>
+      <td><strong>Lasagna a la bolognesa</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Carnes y aves -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Carnes2"></a><td height="50"><strong><font color="red">Carnes y aves:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://static.onecms.io/wp-content/uploads/sites/21/2016/06/01/coctel-de-frutas-facil-2000.jpg" width="150" height="120"></td>
+        <td><img src="https://www.lacostena.com.mx/media/uploads/Recipes/mini_sopes_1600x1000-min.jpg"  width="150" height="120"></td>
+        <td><img src="https://www.lacostena.com.mx/media/uploads/Recipes/mini_sopes_1600x1000-min.jpg"  width="150" height="120"></td>
+        <td><img src="https://www.lacostena.com.mx/media/uploads/Recipes/mini_sopes_1600x1000-min.jpg"  width="150" height="120"></td>
+         <td><img src="https://static.onecms.io/wp-content/uploads/sites/21/2016/06/01/coctel-de-frutas-facil-2000.jpg" width="150" height="120"></td>
+        <td><img src="https://www.lacostena.com.mx/media/uploads/Recipes/mini_sopes_1600x1000-min.jpg"  width="150" height="120"></td>
+        <td><img src="https://static.onecms.io/wp-content/uploads/sites/21/2016/06/01/coctel-de-frutas-facil-2000.jpg" width="150" height="120"></td>
+        <td><img src="https://www.lacostena.com.mx/media/uploads/Recipes/mini_sopes_1600x1000-min.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Puntas de filete de res en salsa ranchera</strong></td>
+      <td><strong>Asada de filete de res</strong></td>
+      <td><strong>Arrachera</strong></td>
+      <td><strong>Milanesa empanizada</strong></td>
+      <td><strong>Puntas de pollo a los 3 chiles</strong></td>
+      <td><strong>Suprema de pollo Sanborns</strong></td>
+      <td><strong>Pechuga cordon blue</strong></td>
+      <td><strong>Fajitas de pollo</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Pescados -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Pescados2"></a><td height="50"><strong><font color="blue">Pescados:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://saboryestilo.com.mx/wp-content/uploads/2020/12/pescado-al-mojo-de-ajo.jpg" width="150" height="120"></td>
+        <td><img src="https://www.cocina-cubana.com/base/stock/Recipe/113-image/113-image_web.jpg"  width="150" height="120"></td>
+        <td><img src="https://simplementerecetas.com/wp-content/uploads/2021/01/SALMON-A-LA-PARRILLA-750x406.jpg"  width="150" height="120"></td>
+        <td><img src="http://www.todochimeneas.com/blog/wp-content/uploads/2013/08/atun-con-salsa-topping.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Filete de pescado a la plancha o al mojo de ajo</strong></td>
+      <td><strong>Filete de pescado empanizado crujiente</strong></td>
+      <td><strong>Salmón a la plancha o al mojo de ajo o al ajillo</strong></td>
+      <td><strong>Atún sellado a la plancha o al mojo o al ajillo</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Enchiladas -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Enchiladas2"></a><td height="50"><strong><font color="green">Enchiladas:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5FBFFFED-E63C-4B1F-9470-AA301ADDBC7D/Derivates/b13978f1-38a8-43a2-8969-d5ff091efe70.jpg" width="150" height="120"></td>
+        <td><img src="https://bakeitwithlove.com/wp-content/uploads/2021/11/leftover-turkey-enchiladas-sq.jpg"  width="150" height="120"></td>
+        <td><img src="https://t1.rg.ltmcdn.com/es/posts/5/6/2/enchiladas_suizas_12265_orig.jpg"  width="150" height="120"></td>
+        <td><img src="https://cdn2.cocinadelirante.com/sites/default/files/images/2017/09/enchiladasdemoleoenmoladas.jpg"  width="150" height="120"></td>
+         <td><img src="https://cdn7.kiwilimon.com/recetaimagen/26579/29796.jpg" width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Tradicionales enchiladas a la Sanborns</strong></td>
+      <td><strong>Nuestras famosas enchiladas suizas rojas</strong></td>
+      <td><strong>Enchiladas zuisas verdes</strong></td>
+      <td><strong>Enchiladas de mole poblano</strong></td>
+      <td><strong>Enchiladas campesinas</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Platillos Mexicanos -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Platillos2"></a><td height="50"><strong><font color="red">Platillos mexicanos:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://sibeti.com/wp-content/uploads/2021/10/como-hacer-receta-de-chilaquiles-verdes-1200x900.jpg" width="150" height="120"></td>
+        <td><img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2020/01/pepitos-arrachera.jpg"  width="150" height="120"></td>
+        <td><img src="https://vadetacos.com/wp-content/uploads/2020/06/receta-tacos-dorados.png"  width="150" height="120"></td>
+        <td><img src="https://i.ytimg.com/vi/BDJXdC6zuZE/maxresdefault.jpg"  width="150" height="120"></td>
+         <td><img src="https://d1ralsognjng37.cloudfront.net/f2af8354-fa82-4927-8b7e-a7815ca732d4.jpeg" width="150" height="120"></td>
+        <td><img src="https://platerio.com/wp-content/uploads/2021/07/Tacos-pastor-frontal2.jpg"  width="150" height="120"></td>
+        <td><img src="https://i.ytimg.com/an/0enh8YZgyKk/cb2eb99f-83fb-4c0d-ae21-f5d09bdedcf8_mq.jpg?v=5d824502" width="150" height="120"></td>
+        <td><img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2020/07/pozole-de-verduras.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Chilaquiles verdes o rojos</strong></td>
+      <td><strong>Pepitos de arrachera</strong></td>
+      <td><strong>Tacos dorados de pollo</strong></td>
+      <td><strong>Alambre de bistec de res</strong></td>
+      <td><strong>Tecolotes</strong></td>
+      <td><strong>Burritos de carne al pastor</strong></td>
+      <td><strong>Molletes con cochinita pibil</strong></td>
+      <td><strong>Pozole rojo o verde</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Tortas y hamburguesas -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Tortas2"></a><td height="50"><strong><font color="blue">Tortas y hamburguesas:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2019/01/tortas-de-carnitas.jpg" width="150" height="120"></td>
+        <td><img src="https://www.gastrolabweb.com/u/fotografias/m/2020/7/3/f608x342-1451_31174_15.jpg"  width="150" height="120"></td>
+        <td><img src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2020/08/hamburguesa-2028707.jpg?itok=ujl3qgM9"  width="150" height="120"></td>
+        <td><img src="https://www.mausi.com/wp-content/uploads/2020/02/Hamburguesa_bacon-2-1.jpg"  width="150" height="120"></td>
+         <td><img src="https://cdn7.kiwilimon.com/brightcove/8634/8634.jpg" width="150" height="120"></td>
+        <td><img src="https://assets.kraftfoods.com/recipe_images/opendeploy/106866_MXM_K2526V16S_OR1_H_640x428.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Torta de carnitas</strong></td>
+      <td><strong>Torta de carne al pastor</strong></td>
+      <td><strong>Hamburguesa sencilla o con queso</strong></td>
+      <td><strong>Hamburguesa británica</strong></td>
+      <td><strong>Sandwich Sanborns de lujo</strong></td>
+      <td><strong>Sandwich de tres quesos</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Especialidades de la fuente -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Fuente2"></a><td height="50"><strong><font color="green">Especialidades de la fuente:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://images-gmi-pmc.edge-generalmills.com/c94def02-0569-455e-9061-4ba2bfedbffc.jpg" width="150" height="120"></td>
+        <td><img src="https://cocinamia.com.mx/wp-content/uploads/2020/02/a-02-1100x500.png"  width="150" height="120"></td>
+        <td><img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2019/07/cuanto-arroz-con-leche-necesito-para-20-personas.jpg"  width="150" height="120"></td>
+        <td><img src="https://www.cocinista.es/download/bancorecursos/recetas/helado-de-leche.jpg"  width="150" height="120"></td>
+         <td><img src="https://cdn7.kiwilimon.com/recetaimagen/504/17311.jpg" width="150" height="120"></td>
+        <td><img src="https://cdn7.kiwilimon.com/recetaimagen/3666/10613.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Pastel de queso con fresa</strong></td>
+      <td><strong>Pay de helado de limón</strong></td>
+      <td><strong>Arroz con leche</strong></td>
+      <td><strong>Nieve</strong></td>
+      <td><strong>Banana Split</strong></td>
+      <td><strong>Malteada tradicional</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Bebidas -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Bebidas2"></a><td height="50"><strong><font color="red">Bebidas:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://amqueretaro.com/wp-content/uploads/2020/08/portada-cerveza.jpg" width="150" height="120"></td>
+        <td><img src="https://cdn.shopify.com/s/files/1/1176/1532/products/modelo-premium-pack-25-junio-2019.jpg?v=1647046133"  width="100" height="120"></td>
+        <td><img src="https://t1.uc.ltmcdn.com/es/posts/7/6/6/como_hacer_limonada_7667_orig.jpg"  width="150" height="120"></td>
+        <td><img src="https://happysumo.com.mx/wp-content/uploads/2018/01/refrescos.png"  width="150" height="120"></td>
+         <td><img src="https://laroussecocina.mx/wp-content/uploads/2020/08/chocolate-caliente.jpg" width="150" height="120"></td>
+        <td><img src="https://us.123rf.com/450wm/alpaksoy/alpaksoy1903/alpaksoy190300271/121132954-bebida-turca-ayran-o-k%C3%A9fir-suero-de-leche-hecha-con-yogur-bebida-ecol%C3%B3gica-tradicional-.jpg?ver=6"  width="150" height="120"></td>
+        <td><img src="https://static.onecms.io/wp-content/uploads/sites/21/2016/06/01/coctel-de-frutas-facil-2000.jpg" width="150" height="120"></td>
+        <td><img src="https://www.lacostena.com.mx/media/uploads/Recipes/mini_sopes_1600x1000-min.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Cervezas</strong></td>
+      <td><strong>Cervezas premium</strong></td>
+      <td><strong>Limonada o Naranjada</strong></td>
+      <td><strong>Refresco grande</strong></td>
+      <td><strong>Chocolate caliente o frío</strong></td>
+      <td><strong>Leche</strong></td>
+      <td><strong>Cafe express</strong></td>
+      <td><strong>Agua embotellada</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Jugos -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+       <a id="Jugos2"></a><td height="50"><strong><font color="blue">Jugos:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://s1.eestatic.com/2015/02/27/cocinillas/cocinillas_14258647_115881093_1706x960.jpg" width="150" height="120"></td>
+        <td><img src="https://www.vidactual.com/rcpmaker/wp-content/uploads/2018/10/Jugo-de-toronja.jpg"  width="150" height="120"></td>
+        <td><img src="https://t2.uc.ltmcdn.com/es/posts/9/8/1/como_hacer_zumo_de_zanahoria_26189_orig.jpg"  width="150" height="120"></td>
+        <td><img src="https://www.tododisca.com/wp-content/uploads/2020/11/food-syrian-middle-restaurant-cuisine-delicious-1-1.jpg"  width="150" height="120"></td>
+         <td><img src="https://www.cocinayvino.com/wp-content/uploads/2016/08/46445895_ml-e1470529984792.jpg" width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Jugo de naranja</strong></td>
+      <td><strong>Jugo de toronja</strong></td>
+      <td><strong>Jugo de zanahoria</strong></td>
+        <td><strong>Jugo de piña</strong></td>
+      <td><strong>Jugo de tomate</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Jugos combinados -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Conbinados2"></a><td height="50"><strong><font color="green">Jugos conbinados:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2016/06/jugoantigripal.jpg" width="150" height="120"></td>
+        <td><img src="https://superpola.com//site/assets/files/29364/batida-de-naranja-fresa-y-avena-1.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong> Naranja con guayaba y limón</strong></td>
+      <td><strong>Naranja con fresa</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Especiales del desayuno -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Especiales2"></a><td height="50"><strong><font color="red">Especiales del desayuno:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://media-cdn.tripadvisor.com/media/photo-s/12/6c/6e/ab/huevos-al-gusto.jpg" width="150" height="120"></td>
+        <td><img src="https://i0.wp.com/irecetasfaciles.com/wp-content/uploads/2020/10/huevos-revueltos.jpg?fit=1280%2C720&ssl=1"  width="150" height="120"></td>
+        <td><img src="https://www.goya.com/media/3805/huevos-rancheros.jpg?quality=80"  width="150" height="120"></td>
+        <td><img src="https://dam.cocinafacil.com.mx/wp-content/uploads/2021/02/huevos-divorciados.jpg"  width="150" height="120"></td>
+         <td><img src="https://www.mexicoenmicocina.com/wp-content/uploads/2019/01/HUEVOS-REVUELTOS-Y-FRIJOLES-5-500x426.jpg" width="150" height="120"></td>
+        <td><img src="https://images.kglobalservices.com/www.kelloggs.es/es_es/recipe/recipe_1659669/1659671_omelet_de_jamn_con_queso.jpg"  width="150" height="120"></td>
+        <td><img src="https://superpola.com//site/assets/files/18991/085.jpg" width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Huevos al gusto</strong></td>
+      <td><strong>Huevos revueltos con huarache</strong></td>
+      <td><strong>Huevos rancheros</strong></td>
+      <td><strong>Huevos divorciados</strong></td>
+      <td><strong>Huevos tirados</strong></td>
+      <td><strong>Omelete de queso o champiñones</strong></td>
+      <td><strong>Tortilla de huevo</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Desayunos mexicanos -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Desayunos2"></a><td height="50"><strong><font color="blue">Desayunos mexicanos:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://assets.unileversolutions.com/recipes-v2/214593.jpg" width="150" height="120"></td>
+        <td><img src="https://www.2000agro.com.mx/wp-content/uploads/chilaquiles-suizos01-990x743.jpg"  width="150" height="120"></td>
+        <td><img src="https://www.hogarmania.com/archivos/201707/cabi0061-enrique-molletes-a-la-mexicana-xl-668x400x80xX.jpg"  width="150" height="120"></td>
+        <td><img src="https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/ZpVAmfS_IzIHmDUW3hgRcmb8-uA=/1660x934/smart/filters:no_upscale()/arc-anglerfish-arc2-prod-dmn.s3.amazonaws.com/public/UWDLFJYBI6IQXC6OCYOWYZVRBQ.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Entomatadas de pollo</strong></td>
+      <td><strong>Chilaquiles Zuisos con pollo</strong></td>
+      <td><strong>Molletes Sanborns</strong></td>
+      <td><strong>Arrachera a la parilla</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Hotcakes -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+       <a id="Hotcakes2"></a><td height="50"><strong><font color="green">Hot cakes:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2021/04/hot-cakes-esponjosos.jpg" width="150" height="120"></td>
+        <td><img src="https://thesweetmolcajete.com/wp-content/uploads/2014/11/bisquets-4.jpg"  width="150" height="120"></td>
+        <td><img src="https://www.yogurtinnutrition.com/wp-content/uploads/2017/05/yoghurt-fruits-winning-combination-810x400.jpg"  width="150" height="120"></td>
+        <td><img src="https://img-global.cpcdn.com/recipes/edf51690b826e646/400x400cq70/photo.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Hotcakes</strong></td>
+      <td><strong>Bisquets</strong></td>
+      <td><strong>Yogurt espeial</strong></td>
+      <td><strong>Waffle</strong></td>
+        </tr>
+<!-- Sección de la tabla con las imagenes de Promociones -->
+      <tr>
+        <!-- Se creo un ancla para poder referenciar estas imagenes con su respectiva sección -->
+        <a id="Promo2"></a><td height="50"><strong><font color="red">Promociones:</font></strong><br></td>
+      </tr>
+      <tr>
+        <td ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/01_Chilaquiles_verdes_con_frijoles_chinos.jpg/1200px-01_Chilaquiles_verdes_con_frijoles_chinos.jpg" width="150" height="120"></td>
+        <td><img src="https://d2j6dbq0eux0bg.cloudfront.net/images/50348138/2234774859.jpg"  width="150" height="120"></td>
+        <td><img src="https://saboryestilo.com.mx/wp-content/uploads/2019/03/platillos-franceses-1200x675.jpg"  width="150" height="120"></td>
+        <td><img src="https://i.blogs.es/1c733d/postres/1366_2000.jpg"  width="150" height="120"></td>
+          </tr>
+      <tr>
+      <td><strong>Pa la cruda</strong></td>
+      <td><strong>Desayuno express</strong></td>
+      <td><strong>Para compartir</strong></td>
+      <td><strong> Para endulzar el día</strong></td>
+        </tr>
+    </table>
+    <!-- Final de la tabla de imagenes -->
+  
+<!-- Parte final, donde se colocaron los datos de contacto -->
+    <div class="datos">
+      <small><strong>Alan HDLR / Programación web 1 / Grupo: 2508</strong></small>
+    </div>
+    </div>
+  
+<!-- End your code here -->
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
